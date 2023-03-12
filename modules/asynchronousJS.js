@@ -1,5 +1,5 @@
 /*----------------------------------------------------------
---------------- Asynchronous JavaScript --------------------
+--------------- Asynchronous JavaScript ---------------------
 ------------------------------------------------------------
 - javascript is a synchronous, blocking, single threaded language
 
