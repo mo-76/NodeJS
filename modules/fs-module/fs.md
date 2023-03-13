@@ -96,7 +96,7 @@ let's now take a look at the async version
 // 1st agr. => path to the file
 // 2nd agr. => is file contents
 // 3rd agr. => is our error first callback
-fs.writeFile("./greet.txt", "Hello world!", (errosr) => {
+fs.writeFile("./greet.txt", "Hello world!", (error) => {
   if (error) {
     console.log(error);
   } else {

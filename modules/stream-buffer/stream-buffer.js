@@ -30,7 +30,7 @@ it just simple mathematics where we rely on base 2 numeric system
 
   -------------------- Character Set ------------------------------
   How does computer know what number will represent each character?
-  How does it know we should be represented as 86?
+  `How does it know we should be represented as 86?`
   these question brings us to the second Topic:
   character set are predefined lists of characters represented by numbers
   we have different character set we can use but the two popular ones are Unicode and ASCII
@@ -158,7 +158,7 @@ buffer.write("code");
 console.log(buffer.toString()); // codemmed
 // because buffers have limited memory the four charactes overwrite the four character from mohammed
 
-buffer.write("codemohammed");
+buffer.write("codemohammed"); //codemoha
 console.log(buffer.toString());
 // the last few letters are skipped as they can't be stored in the buffer
 
