@@ -89,11 +89,11 @@ server.listen(3000, () => {
 
 - _JSON stands for JavaScript Object Notation and is a lightweight data interchange format used for transmitting data between servers and web applications._
 
-- _JSON.stringify() is a built-in method that converts a JavaScript object into a JSON string._
+- _`JSON.stringify()` is a built-in method that converts a JavaScript object into a JSON string._
 
-- _res.setHeader() is used to set the response header. In this case, we set the content type to application/json so that the browser knows to expect JSON data._
+- _`res.setHeader()` is used to set the response header. In this case, we set the content type to application/json so that the browser knows to expect JSON data._
 
-- _JSON.parse() is a built-in method that converts a JSON string back into a JavaScript object._
+- _`JSON.parse()` is a built-in method that converts a JSON string back into a JavaScript object._
 
 - _An API (Application Programming Interface) is a set of rules that allow applications to communicate with each other. In the context of web development, an API refers to a set of rules that allow web applications to communicate with each other over the internet._
 
@@ -161,9 +161,9 @@ stream.pipe(res);
 
 - To read the contents of an HTML file, we can use the fs module in Node.js. We can use either the readFileSync or createReadStream method to read the file contents, depending on the size of the file and the performance requirements of our application.
 
-- If we use readFileSync, the entire file contents are read at once and stored in a variable. If the file is large, this can consume a lot of memory and slow down our application. On the other hand, if we use createReadStream, the file contents are read in small chunks and sent to the response using a stream. This is more performant for larger files and doesn't consume as much memory.
+- If we use `readFileSync`, the entire file contents are read at once and stored in a variable. If the file is large, this can consume a lot of memory and slow down our application. On the other hand, if we use `createReadStream`, the file contents are read in small chunks and sent to the response using a stream. This is more performant for larger files and doesn't consume as much memory.
 
-- When we use streams to send the HTML content as a response, we create a read stream using the createReadStream method and then pipe it to the response object. This sends the contents of the file as a stream of data to the response object, which then sends it to the browser for rendering.
+- When we use streams to send the HTML content as a response, we create a read stream using the `createReadStream` method and then pipe it to the response object. This sends the contents of the file as a stream of data to the response object, which then sends it to the browser for rendering.
 
 ## HTML Template:
 
@@ -173,7 +173,7 @@ stream.pipe(res);
 
 - _To inject dynamic values into an HTML template, we can use string replacement in JavaScript._
 
-- _We can read the HTML file synchronously using the fs module, store it in a variable, and replace the dynamic values with constants or variables in our JavaScript code._
+- _We can read the HTML file synchronously using the `fs module`, store it in a variable, and replace the dynamic values with constants or variables in our JavaScript code._
 
 - _Finally, we can send the updated HTML as a response._
 
