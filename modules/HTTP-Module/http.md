@@ -51,19 +51,19 @@ server.listen(3000, () => {
 
 - _We created a new object with two properties (first name and last name)_
 
-- _We tried to send the object to the client using res.end(), but received an error that we can't send JavaScript objects as-is in a response._
+- _We tried to send the object to the client using `res.end()`, but received an error that we can't send JavaScript objects as-is in a response._
 
-- _We need to convert the object into the JSON format using JSON.stringify()_
+- _We need to convert the object into the JSON format using `JSON.stringify()`_
 
-- _We also need to specify to the browser that the content type is JSON using res.setHeader('Content-Type', 'application/json')_
+- _We also need to specify to the browser that the content type is JSON using `res.setHeader('Content-Type', 'application/json')`_
 
 - _After making these changes, we restart the server and refresh the browser to see the string representation of our object in JSON format._
 
-- _To convert the string back into an object, we can use the built-in JSON.parse() method._
+- _To convert the string back into an object, we can use the built-in `JSON.parse()` method._
 
 - _We've now written our first API endpoint that returns JSON data._
 
-- _Content type set to application/json and JSON.stringify() are sufficient to send a JSON response back to the client._
+- _Content type set to `application/json` and `JSON.stringify()` are sufficient to send a JSON response back to the client._
 
 - _We can now retrieve this data from our application using any server capable of making a request._
 
@@ -167,7 +167,7 @@ stream.pipe(res);
 
 ## HTML Template:
 
-- _In the previous video, we learned how to respond with HTML by creating an HTML file, reading it with the fs module, and piping it as a response._
+- _In the previous video, we learned how to respond with HTML by creating an HTML file, reading it with the `fs module`, and piping it as a response._
 
 - _However, we may need to add dynamic values to the HTML in certain situations, such as displaying the logged-in user's name._
 
@@ -197,11 +197,11 @@ res.write(html); // send the updated HTML as a response
 
 - _Then, we read the HTML file synchronously using the fs module and store its contents in a variable named html._
 
-- _Next, we use the replace() method to replace all occurrences of {{name}} with the value of the name constant variable._
+- _Next, we use the `replace()` method to replace all occurrences of {{name}} with the value of the name constant variable._
 
-- _We then set the response header with the content type of text/html._
+- _We then set the response header with the content type of `text/html`._
 
-- _Finally, we send the updated HTML as a response using the write() method._
+- _Finally, we send the updated HTML as a response using the `write()` method._
 
 <br> <br>
 
