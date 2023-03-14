@@ -16,15 +16,15 @@
 
 - _import the HTTP module:_ `const http = require('http')`;
 
-- _Invoke the createServer() method on the http module, passing in a callback function that receives the request and response objects as arguments._
+- _Invoke the `createServer()` method on the http module, passing in a callback function that receives the request and response objects as arguments._
 
 - _Write code to handle the incoming request and send back the response using the response object._
 
-- _Specify the port number the server should listen on by invoking the listen() method on the server object._
+- _Specify the port number the server should listen on by invoking the `listen()` method on the server object._
 
 - _Optionally, specify a callback function for when the server starts to listen._
 
-- _Run the server using node <filename> in the terminal._
+- _Run the server using `node <filename>` in the terminal._
 
 ```js
 const http = require("http");
