@@ -14,7 +14,7 @@
 
 ## Creating a Node Server
 
-- mport the HTTP module: const http = require('http');
+- import the HTTP module: const http = require('http');
 
 - _Invoke the createServer() method on the http module, passing in a callback function that receives the request and response objects as arguments._
 
